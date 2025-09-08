@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Oakland On Top!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <!--   CUSTOM FONTS EMBED   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--   Logo section   -->
+    <!--   Logo is a screenshot   -->
+    <div class="hero2">
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="https://cdn.glitch.global/277201ad-f152-4b9d-9688-41cfa7997611/TRANSPERENTPT2 (2) (1).png?v=1721249417562"
+            />
+          </a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="team.html" id="team">Team</a></li>
+          <li><a href="collab.html">Collaborations</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--   Title  Section  -->
+
+    <div class="mottitle">
+      <h2 class="mottext">Meet Our Team</h2>
+    </div>
+
+    <div class="motour">Our Story</div>
+
+    <!--   meet the team section   -->
+
+    <div class="teampicsK">
+      <img
+        class="img"
+        src="https://cdn.glitch.global/277201ad-f152-4b9d-9688-41cfa7997611/IMG_4050.JPG?v=1721248357576"
+      />
+
+      <div class="komoinfo">
+        <h1>Komogodje Bagayoko</h1>
+
+        <p1>
+          hello this is kitty I got her happy on my sheets when I wake up I got
+          her cute little logo printed on my makeup, oh And when I shop I look
+          for her face like every time And when I see her, I just got to make
+          her mine Hold on, hey what's that? Girly, is that new? Where'd you get
+          that at? 'Cause I've got to have you It just looks so pretty, I've got
+          to have you Got to have you, got to have you, got to have you</p1
+        >
+      </div>
+    </div>
+
+    <div class="teampicsA">
+      <img
+        class="img"
+        src="https://cdn.glitch.global/277201ad-f152-4b9d-9688-41cfa7997611/ariana?v=1721765881691"
+      />
+
+      <div class="arianainfo">
+        <h1>Ariana Astorga Vega</h1>
+          Ariana is a 17-year-old entering her last year of high school with a
+          profound passion for coding.
+          In addition to her technical pursuits, Ariana has a
+          deep sense of pride in her heritage and hometown. She created this
+          website as a tribute to her roots, celebrating the vibrant culture and
+          community of Oakland where she was born and raised. Through her work,
+          Ariana aims to inspire others and showcase the unique spirit of her
+          beloved city.
+        
+      </div>
+    </div>
+
+    <!-- JavaScript to handle the animation for fade in PER ROW -->
+    <script>
+      // Wait for the DOM content to be fully loadedddd
+      document.addEventListener("DOMContentLoaded", function () {
+        // selects all elements with class 'mural__box'
+        const boxes = document.querySelectorAll(".img");
+        // creates an IntersectionObserver to observe when elements come into view
+        const observer = new IntersectionObserver(
+          (entries) => {
+            // iteraties through each entry observed by the IntersectionObserver
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                // MAKES the element fully visible by setting opacity to 1111111111111111111111111 one
+                entry.target.style.opacity = "1";
+
+                //removess any vertical translation to reset the element's placeeeee
+                entry.target.style.transform = "translateY(0)";
+
+                // applies a CSS animation 'fadeInUp'
+                // and ensuring the animation remains applied ('forwards') after completion
+                entry.target.style.animation = "fadeInUp 2s ease-out forwards";
+
+                // basically stops observing this element once it's animated to optimize performance
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1 }
+        ); // Set a threshold for when to trigger the intersection
+
+        // Observe each box element
+        boxes.forEach((box) => {
+          observer.observe(box);
+        });
+      });
+    </script>
+
+    <!--   Footer section   -->
+  </body>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <h2>OAKLAND ON TOP</h2>
+        <p>
+          Est. 2024 Rights Reserved ©<br />
+          Komogodje Bagayoko, Ariana Astorga Vega
+        </p>
+        <p>
+          <strong>OFFICES</strong><br />
+          +39 123 456789<br />
+          (Monday to Friday)<br />
+          info@oakontop.more
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-x"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>
+          <strong>ACKNOWLEDGED FOUNDATION</strong><br />
+          Prefectural Register of Legal Persons<br />
+          No. 90 - General Part One<br />
+          No. 254 - part two analytical<br />
+          No. 12 - 436089
+        </p>
+      </div>
+      <div class="footer-box">
+        <h2>FOUNDATION OAK PRIDE</h2>
+        <p>
+          <strong>Promoter member:</strong> MissionBit, Techlink<br />
+          <strong>Co-founding members:</strong> Ariana Astorga Vega, Komogodje
+          Bagayoko
+        </p>
+      </div>
+      <div class="footer-box">
+        <h2>MURAL EXHIBITS</h2>
+        <p><a href="#">Services and Resources</a></p>
+        <p><a href="#">Request for photographic documentation</a></p>
+        <p><a href="team.html">Work with us</a></p>
+        <p><a href="aboutus.html">Learn More</a></p>
+        <p><a href="team.html">Contact us</a></p>
+        <p><a href="more.html">More Art</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="#">Cookie Policy</a></p>
+        <p><a href="#">Manage consent</a></p>
+      </div>
+      <div class="footer-box">
+        <h2>SUPPORT US</h2>
+        <p><a href="https://gofund.me/ebddfc00">Donations</a></p>
+        <p><a href="#">Membership</a></p>
+        <p><a href="#">Help Support</a></p>
+        <div class="app-links">
+          <a href="#"
+            ><img
+              src="https://icon-library.com/images/app-store-icon-png/app-store-icon-png-14.jpg"
+              alt="App Store"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://th.bing.com/th/id/OIP.bdNKPs4K-yRUoS0ED6xZ2gHaCU?w=525&h=164&rs=1&pid=ImgDetMain"
+              alt="Google Play"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><strong>SPECIAL THANKS:</strong></p>
+      <div class="sponsors">
+        <img
+          src="https://cdn.glitch.global/b3e104bc-9f5a-46d5-8b7e-f35561c7bbd9/31492328-1993-46d4-870c-3750799dafc2.Screenshot%20(38).png?v=1721011078155"
+          alt="Vision Quilt Org."
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.A3012Q1dB_fSd5uYz5bAiwHaC0?w=344&h=132&c=7&r=0&o=5&pid=1.7"
+          alt="Mission Bit"
+        />
+        <img
+          src="https://www.oaklandedfund.org/wp-content/uploads/2021/06/OPEF_LOGO-02-sideways-1.jpg"
+          alt="Techlink"
+        />
+        <img
+          src="https://cdn.glitch.global/277201ad-f152-4b9d-9688-41cfa7997611/Screen%20Shot%202024-07-11%20at%2010.23.49%20AM.png?v=1720729974623"
+          alt="OAK PRIDE"
+        />
+      </div>
+    </div>
+  </footer>
+  
+  <div id="backToTop">
+      <a href="#team">
+        <img
+             src="https://bakerynouveau.com/wp-content/themes/bones/library/images/top.png"
+             alt="team.html">
+      </a>
+    </div>
+</html>

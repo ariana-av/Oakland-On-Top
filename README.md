@@ -1,7 +1,5 @@
+# Oakland On Top!
 
-This project is transferred from glitch and owned by Ariana Astorga Vega and Komogodje Bagayoko.
-
-# Oakland-On-Top
 ## What is Oakland On Top?
 
 Our project aims to spotlight the incredible talents of Oakland's muralists! By showcasing their work, we hope to bring more attention to the vibrant art scene in Oakland and provide these artists with the recognition they deserve. This will include creating an online gallery and showcasing murals around OAKLAND!
@@ -17,4 +15,4 @@ We believe art has the power to tell stories, provoke thought, and inspire chang
 
 Murals often reflect the struggles, dreams, and resilience of the communities they inhabit. By promoting these works, we give a voice to underrepresented artists and ensure that their messages reach a wider audience.
 
-{ This project is in collaboration with VisionQuilt! }
+{ This project is in collboration with VisionQuilt! }
