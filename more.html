@@ -1,51 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>More art | Oakland On Top</title>
+  <link rel="icon" href="logo-header.png">
 
-    <title>Oakland On Top!</title>
+  <!-- Runs first: adds the "js" class, retries broken images (see script.js) -->
+  <script src="script.js"></script>
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dela+Gothic+One&display=swap" rel="stylesheet">
 
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-     <!--   CUSTOM FONTS EMBED -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-     <div class="hero">
-      <nav>
-        <div class="logo">
-          <a href="index.html">
-             <img class="logo" src="https://cdn.glitch.global/277201ad-f152-4b9d-9688-41cfa7997611/TRANSPERENTPT2 (2) (1).png?v=1721249417562">
-          </a>
-        </div>
+  <!-- Styles shared by every page -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Header and navigation -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">
+        <img src="logo-header.png" alt="Oakland On Top">
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="nav" aria-label="Main">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="aboutus.html">About us</a></li>
@@ -54,282 +41,225 @@
         </ul>
       </nav>
     </div>
+  </header>
 
-    
-    
-    
+  <main id="main">
+    <!-- Page title -->
+    <section class="page-head wrap">
+      <h1>
+        <span class="w"><span style="--k: 0">Murals</span></span>
+        <span class="w"><span style="--k: 1">of</span></span>
+        <span class="w"><span style="--k: 2">Oakland</span></span>
+      </h1>
+      <p class="lead">Take a look at the art around Oakland.</p>
+    </section>
 
-    
-    <div class="moretitle">
-      <h1 class="moreart">Murals of oakland</h1>
-      <p>
-        Take a look at the art around oakland
+    <!-- Mural gallery -->
+    <section class="wrap flush-top">
+      <div class="grid" data-tone="red">
+        <div class="card reveal" style="--i: 0">
+          <span class="thumb">
+            <img src="https://live.staticflickr.com/65535/51109950779_a1bde1bbd8_b.jpg" alt="The Anatomy of Color mural" loading="lazy" referrerpolicy="no-referrer">
+          </span>
+          <span class="cap">
+            <span class="ttl">The Anatomy of Color</span>
+            <span class="by">Bark_like_a_dawg</span>
+          </span>
+        </div>
+
+        <div class="card reveal" style="--i: 1">
+          <span class="thumb">
+            <img src="https://preview.redd.it/vtc40kap05j21.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=2f11427420a88e00db761b5c2b59ca7c1c8d4ae2" alt="Rise and Grind mural" loading="lazy" referrerpolicy="no-referrer">
+          </span>
+          <span class="cap">
+            <span class="ttl">Rise and Grind</span>
+            <span class="by">Illuminaries</span>
+          </span>
+        </div>
+
+        <div class="card reveal" style="--i: 2">
+          <span class="thumb">
+            <img src="https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_80,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/oakland/267800155_431525801974222_4374900052406379606_n_3C967D15-5056-A36F-239DEAE8DF18A6A6-3c967b545056a36_3c96853c-5056-a36f-235e3e092846e4b8.jpg" alt="The Woman of the Black Panther Party mural" loading="lazy" referrerpolicy="no-referrer">
+          </span>
+          <span class="cap">
+            <span class="ttl">The Woman of the Black Panther Party</span>
+          </span>
+        </div>
+
+        <div class="card reveal" style="--i: 0">
+          <span class="thumb">
+            <img src="https://i.pinimg.com/originals/9f/9a/30/9f9a30f720f5f1745f1801dc43e61beb.jpg" alt="Lost and Found mural" loading="lazy" referrerpolicy="no-referrer">
+          </span>
+          <span class="cap">
+            <span class="ttl">Lost and Found</span>
+          </span>
+        </div>
+
+        <div class="card reveal" style="--i: 1">
+          <span class="thumb">
+            <img src="https://assets.deutschlandfunk.de/27f7d26e-bda5-4d77-9787-92343b87646e/1920x1080.jpg?t=1652874065918" alt="Welcome to Oakland mural" loading="lazy" referrerpolicy="no-referrer">
+          </span>
+          <span class="cap">
+            <span class="ttl">Welcome to Oakland</span>
+          </span>
+        </div>
+
+        <div class="card reveal" style="--i: 2">
+          <span class="thumb">
+            <img src="https://ww2.kqed.org/app/uploads/sites/2/2020/06/Photo-Jun-06-3-32-09-PM-1020x765.jpg" alt="We Got Us mural" loading="lazy" referrerpolicy="no-referrer">
+          </span>
+          <span class="cap">
+            <span class="ttl">We Got Us</span>
+          </span>
+        </div>
+
+        <div class="card reveal" style="--i: 0">
+          <span class="thumb">
+            <img src="https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_400,q_75,w_600/https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/oakland/05_TrustYourStruggle_Complete_01_32fab444-819b-4162-bdf0-708e1a76faec.jpg" alt="Oakland Dream mural" loading="lazy" referrerpolicy="no-referrer">
+          </span>
+          <span class="cap">
+            <span class="ttl">Oakland Dream</span>
+          </span>
+        </div>
+
+        <div class="card reveal" style="--i: 1">
+          <span class="thumb">
+            <img src="https://cdn.abcotvs.com/dip/images/6263143_062320-kgo-george-floyd-mural-oakland-img.jpg?w=1600" alt="We Need Change mural" loading="lazy" referrerpolicy="no-referrer">
+          </span>
+          <span class="cap">
+            <span class="ttl">We Need Change</span>
+          </span>
+        </div>
+
+        <div class="card reveal" style="--i: 2">
+          <span class="thumb">
+            <img src="https://i.pinimg.com/originals/e0/b8/89/e0b889559217b785733b24719c2dcca5.jpg" alt="Calling for Justice and Equity mural" loading="lazy" referrerpolicy="no-referrer">
+          </span>
+          <span class="cap">
+            <span class="ttl">Calling for Justice and Equity</span>
+          </span>
+        </div>
+
+        <div class="card reveal" style="--i: 0">
+          <span class="thumb">
+            <img src="https://i.redd.it/5s38wr8soif11.jpg" alt="Turfin mural" loading="lazy" referrerpolicy="no-referrer">
+          </span>
+          <span class="cap">
+            <span class="ttl">Turfin</span>
+            <span class="by">Lower Bottoms</span>
+          </span>
+        </div>
+
+        <div class="card reveal" style="--i: 1">
+          <span class="thumb">
+            <img src="https://i.pinimg.com/originals/0c/ec/4f/0cec4f6faf6a14d52f094058d3754906.jpg" alt="Ernest Doty mural" loading="lazy" referrerpolicy="no-referrer">
+          </span>
+          <span class="cap">
+            <span class="ttl">Ernest Doty</span>
+          </span>
+        </div>
+
+        <div class="card reveal" style="--i: 2">
+          <span class="thumb">
+            <img src="https://oaklandmurals.com/wp-content/uploads/2020/12/132007390_220480216305475_8152779854862888966_n-1.jpg" alt="We Can&#x27;t Wait mural" loading="lazy" referrerpolicy="no-referrer">
+          </span>
+          <span class="cap">
+            <span class="ttl">We Can&#x27;t Wait</span>
+            <span class="by">Original Bonehead</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="wrap center flush-top">
+      <p class="quote reveal">Art tells a story.</p>
+      <p class="lead gap-top reveal">
+        We intend to shed light on the incredible artists who share their ideas
+        for the future with us through their art.
       </p>
-    </div>
-  
+    </section>
+  </main>
 
-    
-     <div class="mural__section">
-      <!-- Targets Specific Box -->
-      <div class="mural__box">
-        <img
-          src="https://live.staticflickr.com/65535/51109950779_a1bde1bbd8_b.jpg"
-          alt="Picture of Mural"
-        />
-<!--    Example of First Box      -->
-        <div class="text-background">
-          <p class="title">THE ANATONY OF COLOR</p>
-          <p class="artist">BARK_LIKE_A_DAWG</p>
+  <!-- Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+
+        <div>
+          <h2>Oakland On Top</h2>
+          <p>
+            Est. 2024. Rights reserved &copy;<br>
+            Komogodje Bagayoko, Ariana Astorga Vega
+          </p>
+          <p>
+            <strong>Offices</strong><br>
+            +39 123 456789<br>
+            (Monday to Friday)<br>
+            info@oakontop.more
+          </p>
+          <p>
+            <a href="#">Facebook</a>,
+            <a href="#">X</a>,
+            <a href="#">YouTube</a>,
+            <a href="#">Instagram</a>,
+            <a href="#">LinkedIn</a>
+          </p>
+          <p>
+            <strong>Acknowledged foundation</strong><br>
+            Prefectural Register of Legal Persons<br>
+            No. 90 - General Part One<br>
+            No. 254 - part two analytical<br>
+            No. 12 - 436089
+          </p>
         </div>
-      </div>
-      <div class="mural__box">
-        <img
-          src="https://preview.redd.it/vtc40kap05j21.jpg?width=1080&crop=smart&auto=webp&s=2f11427420a88e00db761b5c2b59ca7c1c8d4ae2"
-          alt="Picture of Mural"
-        />
-        <div class="text-background">
-          <p class="title">RISE GRIND</p>
-          <p class="artist">ILLUMINGEIES</p>
+
+        <div>
+          <h2>Foundation Oak Pride</h2>
+          <p>
+            <strong>Promoter member:</strong> MissionBit, Techlink<br>
+            <strong>Co-founding members:</strong> Ariana Astorga Vega, Komogodje Bagayoko
+          </p>
         </div>
-      </div>
-      <div class="mural__box">
-        <img
-          src="https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_80,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/oakland/267800155_431525801974222_4374900052406379606_n_3C967D15-5056-A36F-239DEAE8DF18A6A6-3c967b545056a36_3c96853c-5056-a36f-235e3e092846e4b8.jpg"
-          alt="Picture of Mural"
-        />
-        <div class="text-background">
-          <p class="title">THE WOMAN OF THE BLACK PANTHER PARTY</p>
-          <p class="artist"></p>
+
+        <div>
+          <h2>Mural Exhibits</h2>
+          <ul>
+            <li><a href="#">Services and Resources</a></li>
+            <li><a href="#">Request for photographic documentation</a></li>
+            <li><a href="team.html">Work with us</a></li>
+            <li><a href="aboutus.html">Learn more</a></li>
+            <li><a href="team.html">Contact us</a></li>
+            <li><a href="more.html">More art</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Manage consent</a></li>
+          </ul>
         </div>
-      </div>
-      <div class="mural__box">
-        <img
-          src="https://i.pinimg.com/originals/9f/9a/30/9f9a30f720f5f1745f1801dc43e61beb.jpg"
-          alt="Picture of Mural"
-        />
-        <div class="text-background">
-          <p class="title">LOST AND FOUND</p>
+
+        <div>
+          <h2>Support Us</h2>
+          <ul>
+            <li><a href="https://gofund.me/ebddfc00">Donations</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">Help support</a></li>
+          </ul>
         </div>
+
       </div>
 
-      <div class="mural__box">
-        <img
-          src="https://assets.deutschlandfunk.de/27f7d26e-bda5-4d77-9787-92343b87646e/1920x1080.jpg?t=1652874065918"
-          alt="Picture of Mural"
-        />
-        <div class="text-background">
-          <p class="title">WELCOME TO OAKLAND</p>
-        </div>
-      </div>
-      <div class="mural__box">
-        <img
-          src="https://ww2.kqed.org/app/uploads/sites/2/2020/06/Photo-Jun-06-3-32-09-PM-1020x765.jpg"
-          alt="Picture of Mural"
-        />
-        <div class="text-background">
-          <p class="title">WE GOT US</p>
-        </div>
-      </div>
-      <div class="mural__box">
-        <img
-          src="https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_400,q_75,w_600/https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/oakland/05_TrustYourStruggle_Complete_01_32fab444-819b-4162-bdf0-708e1a76faec.jpg"
-          alt="Picture of Mural"
-        />
-        <div class="text-background">
-          <p class="title">OAKLAND DREAM</p>
-        </div>
-      </div>
-      <div class="mural__box">
-        <img
-          src="https://cdn.abcotvs.com/dip/images/6263143_062320-kgo-george-floyd-mural-oakland-img.jpg?w=1600"
-          alt="Picture of Mural"
-        />
-        <div class="text-background">
-          <p class="title"></p>
-          <p class="artist">WE NEED CHANGE</p>
-        </div>
-      </div>
-      
-      <div class="mural__box">
-        <img
-          src="https://i.pinimg.com/originals/e0/b8/89/e0b889559217b785733b24719c2dcca5.jpg"
-          alt="Picture of Mural"
-        />
-        <div class="text-background">
-          <p class="title">CALLING FOR JUSTICE AND EQUITY</p>
-        </div>
-      </div>
-      <div class="mural__box">
-        <img
-          src="https://i.redd.it/5s38wr8soif11.jpg"
-          alt="Picture of Mural"
-        />
-        <div class="text-background">
-          <p class="title">TURFIN</p>
-          <p class="artist">LOWER BOTTOMS</p>
-        </div>
-      </div>
-      <div class="mural__box">
-        <img
-          src="https://i.pinimg.com/originals/0c/ec/4f/0cec4f6faf6a14d52f094058d3754906.jpg"
-          alt="Picture of Mural"
-        />
-        <div class="text-background">
-          <p class="title">ERNEST DOTY</p>
-        </div>
-      </div>
-      <div class="mural__box">
-       <img
-          src="https://oaklandmurals.com/wp-content/uploads/2020/12/132007390_220480216305475_8152779854862888966_n-1.jpg"
-        /> 
-         
-        <div class="text-background">
-          <p class="title">WE CAN'T WAIT</p>   
-          <p class="artist"> ORIGINAL BONEHEAD</p>
+      <div class="thanks">
+        <p><strong>Special thanks</strong></p>
+        <div class="sponsors">
+          <img src="https://cdn.glitch.global/b3e104bc-9f5a-46d5-8b7e-f35561c7bbd9/31492328-1993-46d4-870c-3750799dafc2.Screenshot%20(38).png?v=1721011078155" alt="Vision Quilt Org." loading="lazy" referrerpolicy="no-referrer">
+          <img src="https://th.bing.com/th/id/OIP.A3012Q1dB_fSd5uYz5bAiwHaC0?w=344&amp;h=132&amp;c=7&amp;r=0&amp;o=5&amp;pid=1.7" alt="Mission Bit" loading="lazy" referrerpolicy="no-referrer">
+          <img src="https://www.oaklandedfund.org/wp-content/uploads/2021/06/OPEF_LOGO-02-sideways-1.jpg" alt="Techlink" loading="lazy" referrerpolicy="no-referrer">
+          <img src="https://cdn.glitch.global/277201ad-f152-4b9d-9688-41cfa7997611/Screen%20Shot%202024-07-11%20at%2010.23.49%20AM.png?v=1720729974623" alt="Oak Pride" loading="lazy" referrerpolicy="no-referrer">
         </div>
       </div>
     </div>
+  </footer>
 
-    
-    
-    
-   <div class="oaklandart">
-     <p>
-       We intend to shed light on the incredible artists who share their ideas for the future with us through their art by showing you the tranquility of this lovely city we call home. 
-     </p>
-     <img class="oak-icon"
-          src="https://media.istockphoto.com/id/1447059586/vector/heart-shape-icon-with-oakland-flag-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=Wn1QJGVfxLv9jrmO4i84Q8nhSw5Ta1O7ky2D3JZunIM="
-          alt="Oakland Tree"
-          >
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     <script>
-      // Wait for the DOM content to be fully loadedddd
-      document.addEventListener("DOMContentLoaded", function () {
-        // selects all elements with class 'mural__box'
-        const boxes = document.querySelectorAll(".mural__box");
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                // MAKES the element fully visible by setting opacity to 1111111111111111111111111 one
-                entry.target.style.opacity = "1";
-
-                //removess any vertical translation to reset the element's placeeeee
-                entry.target.style.transform = "translateY(0)";
-                entry.target.style.animation = "fadeInUp 1s ease-out forwards";
-
-                // basically stops observing this element once it's animated to optimize performance
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.1 }
-        );
-        boxes.forEach((box) => {
-          observer.observe(box);
-        });
-      });
-    </script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  <!--   Footer section   -->
-   <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-box">
-                <h2>OAKLAND ON TOP</h2>
-                <p>Est. 2024 Rights Reserved ©<br>
-               Komogodje Bagayoko, Ariana Astorga Vega</p>
-                <p><strong>OFFICES</strong><br>
-                +39 123 456789<br>
-                (Monday to Friday)<br>
-                info@oakontop.more</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-x"></i></a>
-                    <a href="#"><i class="fa fa-youtube"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                </div>
-                <p><strong>ACKNOWLEDGED FOUNDATION</strong><br>
-                Prefectural Register of Legal Persons<br>
-                No. 90 - General Part One<br>
-                No. 254 - part two analytical<br>
-                No. 12 - 436089</p>
-            </div>
-            <div class="footer-box">
-                <h2>FOUNDATION OAK PRIDE</h2>
-                <p><strong>Promoter member:</strong> MissionBit, Techlink<br>
-                <strong>Co-founding members:</strong> Ariana Astorga Vega, Komogodje Bagayoko</p>
-            </div>
-            <div class="footer-box">
-                <h2>MURAL EXHIBITS</h2>
-                <p><a href="#">Services and Resources</a></p>
-                <p><a href="#">Request for photographic documentation</a></p>
-                <p><a href="team.html">Work with us</a></p>
-                <p><a href="aboutus.html">Learn More</a></p>
-                <p><a href="team.html">Contact us</a></p>
-                <p><a href="more.html">More Art</a></p>
-                <p><a href="#">Privacy Policy</a></p>
-                <p><a href="#">Cookie Policy</a></p>
-                <p><a href="#">Manage consent</a></p>
-            </div>
-            <div class="footer-box">
-                <h2>SUPPORT US</h2>
-                <p><a href="https://gofund.me/ebddfc00">Donations</a></p>
-                <p><a href="#">Membership</a></p>
-                <p><a href="#">Help Support</a></p>
-                <div class="app-links">
-                    <a href="#"><img src="https://icon-library.com/images/app-store-icon-png/app-store-icon-png-14.jpg" alt="App Store"></a>
-                    <a href="#"><img src="https://th.bing.com/th/id/OIP.bdNKPs4K-yRUoS0ED6xZ2gHaCU?w=525&h=164&rs=1&pid=ImgDetMain" alt="Google Play"></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p><strong>SPECIAL THANKS:</strong></p>
-            <div class="sponsors">
-                <img src="https://cdn.glitch.global/b3e104bc-9f5a-46d5-8b7e-f35561c7bbd9/31492328-1993-46d4-870c-3750799dafc2.Screenshot%20(38).png?v=1721011078155" alt="Vision Quilt Org.">
-                <img src="https://th.bing.com/th/id/OIP.A3012Q1dB_fSd5uYz5bAiwHaC0?w=344&h=132&c=7&r=0&o=5&pid=1.7" alt="Mission Bit">
-                <img src="https://www.oaklandedfund.org/wp-content/uploads/2021/06/OPEF_LOGO-02-sideways-1.jpg" alt="Techlink">
-                <img src="https://cdn.glitch.global/277201ad-f152-4b9d-9688-41cfa7997611/Screen%20Shot%202024-07-11%20at%2010.23.49%20AM.png?v=1720729974623" alt="OAK PRIDE">
-          </div>
-        </div>
-    </footer>
-    
-    
-    <div id="backToTop">
-      <a href="more.html">
-        <img
-             src="https://bakerynouveau.com/wp-content/themes/bones/library/images/top.png"
-             alt="more.html">
-      </a>
-    </div>
-  </body>
+  <a id="backToTop" href="#top" aria-label="Back to top">&uarr;</a>
+</body>
 </html>
